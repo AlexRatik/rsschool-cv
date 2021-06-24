@@ -20,43 +20,50 @@
         <title>CV</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="biography">
-                <img class="photo" src="./photo.jpg" alt="" />
-                <p class="title">Technical skills:</p>
-                <ul class="skills">
-                    <li>Hyper text markup language (HTML)</li>
-                    <li>Cascading style sheets (CSS)</li>
-                    <li>Super CSS (SCSS)</li>
-                    <li>TypeScript</li>
-                    <li>JavaScript</li>
-                </ul>
-                <p class="title">Communication with me:</p>
-                <div class="communication">
-                    <p>Discord: <strong>Alex_Ra#8132</strong></p>
-                    <a href="https://vk.com/id458739366">VK</a>
-                </div>
-            </div>
+        <main>
+            <div class="wrapper">
+                <section class="biography">
+                    <img class="photo" src="./photo.jpg" alt="Photo" />
+                    <h3 class="title">Technical skills:</h3>
+                    <ul class="skills">
+                        <li>Hyper text markup language (HTML)</li>
+                        <li>Cascading style sheets (CSS)</li>
+                        <li>Super CSS (SCSS)</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                    </ul>
 
-            <div class="information">
-                <h2 class="name-title">Alexandr Ratkevich</h2>
-                <p class="sub"><em>Frontend developer</em></p>
-                <p class="title">My story:</p>
-                <p class="about_myself">
-                    Let me tell you a bit information about myself, my goals,
-                    strong sides. I am from Oshmyany, it is a small city with
-                    population around 10.000 people. I wasn’t born in a rich
-                    family, but I can’t say that my family was a poor. I have an
-                    elder brother, he is 31 now. He is the most important human
-                    in my life. It is he who always help me in the most
-                    difficult situations and always support me, for which I’m
-                    very grateful for him. He pushed me to the path of
-                    programmer. I did little projects for myself, and I think
-                    that now I already have a base, I want to structure it and
-                    get my first job.
-                </p>
-                <p class="title">example of code of binary search:</p>
-                <pre><code>function findIndex(array, value) {  
+                    <h3 class="title">Communication with me:</h3>
+                    <ul class="communication">
+                        <li>
+                            <p>Discord: <strong>Alex_Ra#8132</strong></p>
+                        </li>
+                        <li><a href="https://vk.com/id458739366">VK</a></li>
+                    </ul>
+                </section>
+
+                <section class="information">
+                    <h2 class="name-title">Alexandr Ratkevich</h2>
+                    <h3 class="sub"><em>Frontend developer</em></h3>
+                    <p class="title">My story:</p>
+                    <article class="about_myself">
+                        <h4>
+                            Let me tell you a bit information about myself, my
+                            goals, strong sides. I am from Oshmyany, it is a
+                            small city with population around 10.000 people. I
+                            wasn’t born in a rich family, but I can’t say that
+                            my family was a poor. I have an elder brother, he is
+                            31 now. He is the most important human in my life.
+                            It is he who always help me in the most difficult
+                            situations and always support me, for which I’m very
+                            grateful for him. He pushed me to the path of
+                            programmer. I did little projects for myself, and I
+                            think that now I already have a base, I want to
+                            structure it and get my first job.
+                        </h4>
+                    </article>
+                    <p class="title">example of code of binary search:</p>
+                    <pre><code>function findIndex(array, value) {  
                     let first = 0;  
                     let last = array.length - 1;  
                     let between = Math.round(last / 2);  
@@ -70,26 +77,31 @@
                     }  
                     return Math.abs(between);  
                   }</code></pre>
-                <p class="title">Trainings:</p>
-                <p>
-                    I did courses on Udemy.com, which I finished successfully.
-                </p>
-                <p class="title">education:</p>
-                <p>
-                    I am studying in BSUIR. There is a good base for studying
-                    any field of IT. And also I have lectures and seminars on
-                    programming.
-                </p>
-                <p class="title">English level:</p>
-                <p>I rate my English level as A2.</p>
+                    <p class="title">Trainings:</p>
+                    <p>
+                        I did courses on Udemy.com, which I finished
+                        successfully.
+                    </p>
+                    <p class="title">education:</p>
+                    <p>
+                        I am studying in BSUIR. There is a good base for
+                        studying any field of IT. And also I have lectures and
+                        seminars on programming.
+                    </p>
+                    <p class="title">English level:</p>
+                    <p>I rate my English level as A2.</p>
+                </section>
             </div>
-        </div>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="https://github.com/AlexRatik">Github</a>
+                <p>2021</p>
+                <a href="https://rs.school/js/"
+                    ><img src="./logo.svg" alt="RSSchool"
+                /></a>
+            </nav>
+        </footer>
     </body>
-    <footer>
-        <a href="https://github.com/AlexRatik">Github</a>
-        <p>2021</p>
-        <a href="https://rs.school/js/"
-            ><img src="./logo.svg" alt="RSSchool"
-        /></a>
-    </footer>
 </html>
