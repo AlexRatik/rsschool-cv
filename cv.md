@@ -1,3 +1,21 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae tortor condimentum. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Erat nam at lectus urna duis convallis convallis tellus. Turpis massa sed elementum tempus egestas. Scelerisque viverra mauris in aliquam sem fringilla ut. Egestas tellus rutrum tellus pellentesque eu tincidunt. Turpis cursus in hac habitasse platea. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. In ante metus dictum at tempor commodo ullamcorper a lacus. Egestas egestas fringilla phasellus faucibus scelerisque. Egestas diam in arcu cursus euismod. Mauris pellentesque pulvinar pellentesque habitant morbi. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Scelerisque in dictum non consectetur a erat nam. Pharetra et ultrices neque ornare aenean euismod elementum. Neque laoreet suspendisse interdum consectetur libero id faucibus. Leo in vitae turpis massa sed elementum tempus.
-
-Diam vulputate ut pharetra sit amet. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tristique senectus et netus et. Blandit cursus risus at ultrices mi tempus. Non diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Enim ut sem viverra aliquet eget sit amet tellus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Sit amet porttitor eget dolor morbi. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Ut consequat semper viverra nam. In egestas erat imperdiet sed euismod nisi porta. Enim facilisis gravida neque convallis a cras. Neque vitae tempus quam pellentesque nec. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Integer vitae justo eget magna fermentum iaculis eu non. Fusce ut placerat orci nulla pellentesque. Magna sit amet purus gravida. Vestibulum mattis ullamcorper velit sed ullamcorper.
+### Hello! My name is Alexandr. You are can contact with me by write me messages in Discord **(Alex_Ra#8132)**.
+Let me tell you a bit information about myself, my goals, strong sides. I am from Oshmyany, it is a small city with population around 10.000 people.  I wasn’t born in a rich family, but I can’t say that my family was a poor. I have an elder brother, he is 31 now. He is the most important human in my life. It is he who always help me in the most difficult situations and always support me, for which I’m very grateful for him. He pushed me to the path of programmer. I did little projects for myself, and I think that now I already have a base, I want to structure it and get my first job.
+-I can write some web application using ___HTML, CSS(SCSS), JS(TS)___.
+-This is example of code of binary search: 
+_`function findIndex(array, value) {
+  let first = 0;
+  let last = array.length - 1;
+  let between = Math.round(last / 2);
+  while (array[between] !== value && first < last) {
+    if (array[between] < value) {
+      first = between + 1;
+    } else if (array[between] > value) {
+      last = between - 1;
+    }
+    between = Math.round((first + last) / 2);
+  }
+  return Math.abs(between);
+}`_ 
+-I did courses on Udemy.com, which I finished successfully.
+-I am studying in BSUIR. There are lectures and seminars on programming.
+-I rate my English as **A2** level.
