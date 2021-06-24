@@ -27,10 +27,11 @@ body {
     color: rgb(79, 79, 235);
     text-transform: uppercase;
 }
-.skills {
+ul {
     list-style-type: none;
     text-align: left;
     font-size: 14px;
+    margin: 5px 0;
 }
 .skills > li::before {
     content: "-";
@@ -39,15 +40,11 @@ body {
     width: 100%;
     border-radius: 20%;
 }
-.communication {
-    text-align: left;
-    font-size: 14px;
-}
-.communication > a {
+.communication > li > a {
     color: white;
     text-decoration: none;
 }
-.communication > a:hover {
+.communication > li > a:hover {
     transition: 1s ease;
     text-decoration: underline;
     color: lawngreen;
@@ -79,7 +76,8 @@ body {
 }
 p,
 ul,
-a {
+a,
+article {
     letter-spacing: 1.05px;
 }
 
@@ -87,7 +85,7 @@ a {
 
 /* FOOTER */
 
-footer {
+footer > nav {
     padding: 10px 0;
     width: 30%;
     display: flex;
@@ -101,15 +99,15 @@ footer {
     border-left: none;
     background-color: gainsboro;
 }
-footer > a {
+footer > nav > a {
     color: black;
     text-decoration: none;
     margin: 0px 2em;
 }
-footer > a:hover {
+footer > nav > a:hover {
     transition: 0.6s ease;
     color: rgb(24, 24, 172);
 }
-footer > a > img {
+footer > nav > a > img {
     width: 100px;
 }
