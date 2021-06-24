@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+
+/* BIOFRAPHY START */
+.biography {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+.biography > .title {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 18px;
+    color: rgb(79, 79, 235);
+    text-transform: uppercase;
+}
+.skills {
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+}
+.skills > li::before {
+    content: "-";
+}
+.photo {
+    width: 100%;
+    border-radius: 20%;
+}
+.communication {
+    text-align: left;
+    font-size: 14px;
+}
+.communication > a {
+    color: white;
+    text-decoration: none;
+}
+.communication > a:hover {
+    transition: 1s ease;
+    text-decoration: underline;
+    color: lawngreen;
+}
+
+/* END */
+
+/* INFORMATION START */
+.information {
+    padding: 10px 20px;
+}
+.name-title {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.sub {
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 7px;
+}
+.information > .title {
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 18px;
+    color: rgb(28, 28, 180);
+    text-transform: uppercase;
+}
+p,
+ul,
+a {
+    letter-spacing: 1.05px;
+}
+
+/* INFORMATION END */
+
+/* FOOTER */
+
+footer {
+    padding: 10px 0;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+
+    border: 3px double black;
+    border-top: none;
+    border-left: none;
+    background-color: gainsboro;
+}
+footer > a {
+    color: black;
+    text-decoration: none;
+    margin: 0px 2em;
+}
+footer > a:hover {
+    transition: 0.6s ease;
+    color: rgb(24, 24, 172);
+}
+footer > a > img {
+    width: 100px;
+}
