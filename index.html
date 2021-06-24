@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>CV</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="biography">
+                <img class="photo" src="./photo.jpg" alt="" />
+                <p class="title">Technical skills:</p>
+                <ul class="skills">
+                    <li>Hyper text markup language (HTML)</li>
+                    <li>Cascading style sheets (CSS)</li>
+                    <li>Super CSS (SCSS)</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p class="title">Communication with me:</p>
+                <div class="communication">
+                    <p>Discord: <strong>Alex_Ra#8132</strong></p>
+                    <a href="https://vk.com/id458739366">VK</a>
+                </div>
+            </div>
+
+            <div class="information">
+                <h2 class="name-title">Alexandr Ratkevich</h2>
+                <p class="sub"><em>Frontend developer</em></p>
+                <p class="title">My story:</p>
+                <p class="about_myself">
+                    Let me tell you a bit information about myself, my goals,
+                    strong sides. I am from Oshmyany, it is a small city with
+                    population around 10.000 people. I wasn’t born in a rich
+                    family, but I can’t say that my family was a poor. I have an
+                    elder brother, he is 31 now. He is the most important human
+                    in my life. It is he who always help me in the most
+                    difficult situations and always support me, for which I’m
+                    very grateful for him. He pushed me to the path of
+                    programmer. I did little projects for myself, and I think
+                    that now I already have a base, I want to structure it and
+                    get my first job.
+                </p>
+                <p class="title">example of code of binary search:</p>
+                <pre><code>function findIndex(array, value) {  
+                    let first = 0;  
+                    let last = array.length - 1;  
+                    let between = Math.round(last / 2);  
+                    while (array[between] !== value && first &lt; last) {  
+                      if (array[between] &lt; value) {  
+                        first = between + 1;  
+                      } else if (array[between] > value) {  
+                        last = between - 1;  
+                      }  
+                      between = Math.round((first + last) / 2);  
+                    }  
+                    return Math.abs(between);  
+                  }</code></pre>
+                <p class="title">Trainings:</p>
+                <p>
+                    I did courses on Udemy.com, which I finished successfully.
+                </p>
+                <p class="title">education:</p>
+                <p>
+                    I am studying in BSUIR. There is a good base for studying
+                    any field of IT. And also I have lectures and seminars on
+                    programming.
+                </p>
+                <p class="title">English level:</p>
+                <p>I rate my English level as A2.</p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <a href="https://github.com/AlexRatik">Github</a>
+        <p>2021</p>
+        <a href="https://rs.school/js/"
+            ><img src="./logo.svg" alt="RSSchool"
+        /></a>
+    </footer>
+</html>
