@@ -9,7 +9,12 @@ html {
     letter-spacing: 1.5px;
     color: black;
 }
-
+h1 {
+    display: none;
+}
+iframe {
+    border: 0;
+}
 a {
     text-decoration: none;
     color: black;
