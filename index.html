@@ -7,101 +7,226 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
             rel="stylesheet"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Roboto:wght@300&display=swap"
             rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
         />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
         <link rel="stylesheet" href="style.css" />
         <title>CV</title>
     </head>
     <body>
-        <main>
-            <div class="wrapper">
-                <section class="biography">
-                    <img class="photo" src="./photo.jpg" alt="Photo" />
+        <div class="wrapper">
+            <header>
+                <h2>Ratkevich Alexandr || Frontend-developer</h2>
+                <nav class="menu">
+                    <div class="burger">
+                        <input type="checkbox" id="burger__check" />
+                        <label for="burger__check">menu</label>
+                        <div class="burger-line first-line"></div>
+                        <div class="burger-line second-line"></div>
+                        <div class="burger-line third-line"></div>
+                        <div class="burger-line fourth-line"></div>
+                        <div class="burger_menu__list">
+                            <div><a href="#myself">My story</a></div>
+                            <div><a href="#skills">Techical skills</a></div>
+                            <div><a href="#example">Code's example</a></div>
+                            <div><a href="#trainings">Trainings</a></div>
+                            <div><a href="#education">Education</a></div>
+                            <div><a href="#video">SI video</a></div>
+                            <div><a href="#en_lvl">English level</a></div>
+                            <div><a href="#contacts">Contacts</a></div>
+                            <div><a href="#projects">Projects</a></div>
+                        </div>
+                    </div>
+                    <div class="menu__list">
+                        <div><a href="#myself">My story</a></div>
+                        <div><a href="#skills">Techical skills</a></div>
+                        <div><a href="#example">Code's example</a></div>
+                        <div><a href="#trainings">Trainings</a></div>
+                        <div><a href="#education">Education</a></div>
+                        <div><a href="#video">SI video</a></div>
+                        <div><a href="#en_lvl">English level</a></div>
+                        <div><a href="#contacts">Contacts</a></div>
+                        <div><a href="#projects">Projects</a></div>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <section id="myself" class="myself">
+                    <div class="photo__container">
+                        <img class="photo" src="./photo.jpg" alt="Photo" />
+                    </div>
+                    <div class="text">
+                        Hello👋<br />
+                        Nice to meet you here 😻<br />
+                        Let's get acquainted🤝
+                    </div>
+                    <div class="text">
+                        <p class="title">My story:</p>
+                        <article class="about_myself">
+                            <p>
+                                Let me tell you a bit information about myself,
+                                my goals, strong sides. I am from Oshmyany, it
+                                is a small city with population around 10.000
+                                people. I wasn’t born in a rich family, but I
+                                can’t say that my family was a poor. I have an
+                                elder brother, he is 31 now. He is the most
+                                important human in my life. It is he who always
+                                help me in the most difficult situations and
+                                always support me, for which I’m very grateful
+                                for him. He pushed me to the path of programmer.
+                                I did little projects for myself, and I think
+                                that now I already have a base, I want to
+                                structure it and get my first job.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="skills">
                     <h3 class="title">Technical skills:</h3>
                     <ul class="skills">
                         <li>Hyper text markup language (HTML)</li>
                         <li>Cascading style sheets (CSS)</li>
                         <li>Super CSS (SCSS)</li>
                         <li>TypeScript</li>
-                        <li>JavaScript</li>
-                    </ul>
-
-                    <h3 class="title">Communication with me:</h3>
-                    <ul class="communication">
-                        <li>
-                            <p>Discord: <strong>Alex_Ra#8132</strong></p>
-                        </li>
-                        <li><a href="https://vk.com/id458739366">VK</a></li>
+                        <li>JavaSct</li>
                     </ul>
                 </section>
 
-                <section class="information">
-                    <h2 class="name-title">Alexandr Ratkevich</h2>
-                    <h3 class="sub"><em>Frontend developer</em></h3>
-                    <p class="title">My story:</p>
-                    <article class="about_myself">
-                        <h4>
-                            Let me tell you a bit information about myself, my
-                            goals, strong sides. I am from Oshmyany, it is a
-                            small city with population around 10.000 people. I
-                            wasn’t born in a rich family, but I can’t say that
-                            my family was a poor. I have an elder brother, he is
-                            31 now. He is the most important human in my life.
-                            It is he who always help me in the most difficult
-                            situations and always support me, for which I’m very
-                            grateful for him. He pushed me to the path of
-                            programmer. I did little projects for myself, and I
-                            think that now I already have a base, I want to
-                            structure it and get my first job.
-                        </h4>
-                    </article>
-                    <p class="title">example of code of binary search:</p>
-                    <pre><code>function findIndex(array, value) {  
-                    let first = 0;  
-                    let last = array.length - 1;  
-                    let between = Math.round(last / 2);  
-                    while (array[between] !== value && first &lt; last) {  
-                      if (array[between] &lt; value) {  
-                        first = between + 1;  
-                      } else if (array[between] > value) {  
-                        last = between - 1;  
-                      }  
-                      between = Math.round((first + last) / 2);  
-                    }  
-                    return Math.abs(between);  
-                  }</code></pre>
-                    <p class="title">Trainings:</p>
+                <section id="example">
+                    <h3 class="title">example of code of binary search:</h3>
+                    <pre><code class='javascript'>
+function findIndex(array, value) {  
+  let first = 0;  
+  let last = array.length - 1;  
+  let between = Math.round(last / 2);  
+  while (array[between] !== value 
+  && first &lt; last) {  
+    if (array[between] &lt; value) {  
+      first = between + 1;  
+    } 
+    else if (array[between] > value) {  
+      last = between - 1;  
+    }  
+    between = Math.round(
+        (first + last) / 2
+    );  
+  }  
+  return Math.abs(between);  
+}
+                </code></pre>
+                </section>
+                <section id="projects">
+                    <h3 class="title">My projects:</h3>
+                    <a
+                        href="https://rolling-scopes-school.github.io/alexratik-JSFEPRESCHOOL/js-clock/"
+                    >
+                        <div class="project__container">
+                            <div class="project__left">
+                                <p class="project-title">JS-Clock</p>
+                                <p>Mini web application</p>
+                                <p>Made with CSS, HTML, JS</p>
+                            </div>
+                            <div class="project__right">
+                                <img
+                                    class="project__photo"
+                                    src="js-clock.png"
+                                    alt="clock"
+                                />
+                            </div></div
+                    ></a>
+                    <a
+                        href="https://rolling-scopes-school.github.io/alexratik-JSFEPRESCHOOL/custom-video-player/"
+                    >
+                        <div class="project__container">
+                            <div class="project__left">
+                                <p class="project-title">Custom video player</p>
+                                <p>Video player with hotkeys and slider</p>
+                                <p>Made with CSS, HTML, JS</p>
+                            </div>
+                            <div class="project__right">
+                                <img
+                                    class="project__photo"
+                                    src="video-player.png"
+                                    alt="video player"
+                                />
+                            </div></div
+                    ></a>
+                </section>
+                <section id="trainings">
+                    <h3 class="title">Trainings:</h3>
                     <p>
                         I did courses on Udemy.com, which I finished
-                        successfully.
+                        successfully. And also I did courses at RSschool JS/FE
+                        2021Q1, but not successfully for some reasons.
                     </p>
-                    <p class="title">education:</p>
+                </section>
+
+                <section id="education">
+                    <h3 class="title">education:</h3>
                     <p>
                         I am studying in BSUIR. There is a good base for
                         studying any field of IT. And also I have lectures and
                         seminars on programming.
                     </p>
-                    <p class="title">English level:</p>
+                </section>
+
+                <section id="video">
+                    <h3 class="title">Self-introduction video:</h3>
+                    <div class="video__container">
+                        <iframe
+                            class="video"
+                            src="https://www.youtube.com/embed/mXCY7cY_zL4"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </section>
+
+                <section id="en_lvl">
+                    <h3 class="title">English level:</h3>
                     <p>I rate my English level as A2.</p>
                 </section>
-            </div>
-        </main>
 
-        <footer>
-            <nav>
-                <a href="https://github.com/AlexRatik">Github</a>
-                <p>2021</p>
-                <a href="https://rs.school/js/"
-                    ><img src="./logo.svg" alt="RSSchool"
-                /></a>
-            </nav>
-        </footer>
+                <section id="contacts">
+                    <h3 class="title">Communication with me:</h3>
+                    <ul class="communication">
+                        <li>
+                            <p>Discord: <strong>Alex_Ra#8132</strong></p>
+                        </li>
+                        <li>
+                            VK:
+                            <a href="https://vk.com/id458739366"
+                                >Alexandr Ratkevich</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+            <footer id="footer">
+                <nav>
+                    <a href="https://github.com/AlexRatik">Github</a>
+                    <p>2021</p>
+                    <a href="https://rs.school/js/"
+                        ><img src="./logo.svg" alt="RSSchool"
+                    /></a>
+                </nav>
+            </footer>
+
+            <button class="toTop">⇮</button>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
